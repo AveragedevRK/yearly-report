@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Loader2, ExternalLink, RefreshCw, Maximize2, Minimize2 } from 'lucide-react';
 
+TARGET_URL = "https://kv-detailed-yearly-repor-qc08pfv.gamma.site/";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
