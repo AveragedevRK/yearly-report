@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Loader2, ExternalLink, RefreshCw, Maximize2, Minimize2 } from 'lucide-react';
 
-const TARGET_URL = "https://kv-detailed-yearly-repor-qc08pfv.gamma.site/";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -117,21 +116,6 @@ export default function App() {
           </span>
         </button>
 
-        <div className="w-px h-6 bg-white/20 mx-1" />
-
-        <a
-          href={TARGET_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 text-indigo-300 hover:text-indigo-100 hover:bg-indigo-500/20 rounded-full transition-colors group relative"
-          aria-label="Open in New Tab"
-        >
-          <ExternalLink className="w-5 h-5" />
-          <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-            Open Original
-          </span>
-        </a>
-      </div>
     </div>
   );
 }
