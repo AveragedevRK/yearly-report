@@ -91,5 +91,6 @@ export default function App() {
         style={{ display: 'block' }} // Removes any default inline spacing
       />
 
+    </div>
   );
 }
