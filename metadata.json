@@ -1,0 +1,5 @@
+{
+  "name": "Gamma Report Viewer",
+  "description": "A dedicated full-screen viewer for the KV Detailed Yearly Report, featuring real-time responsive scaling and immersive presentation mode.",
+  "requestFramePermissions": []
+}
