@@ -90,32 +90,5 @@ export default function App() {
         style={{ display: 'block' }} // Removes any default inline spacing
       />
 
-      {/* Floating Controls Overlay */}
-      <div 
-        className={`absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30 flex items-center gap-2 p-2 rounded-full bg-gray-800/80 backdrop-blur-sm border border-white/10 shadow-2xl transition-all duration-500 ${showControls || isLoading ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8 pointer-events-none'}`}
-      >
-        <button
-          onClick={handleReload}
-          className="p-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-full transition-colors tooltip-trigger group relative"
-          aria-label="Reload Report"
-        >
-          <RefreshCw className="w-5 h-5" />
-          <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-            Reload
-          </span>
-        </button>
-
-        <button
-          onClick={toggleFullscreen}
-          className="p-3 text-gray-300 hover:text-white hover:bg-white/10 rounded-full transition-colors group relative hidden sm:block"
-          aria-label="Toggle Fullscreen"
-        >
-          {isFullscreen ? <Minimize2 className="w-5 h-5" /> : <Maximize2 className="w-5 h-5" />}
-          <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-            {isFullscreen ? 'Exit Fullscreen' : 'Fullscreen'}
-          </span>
-        </button>
-
-    </div>
   );
 }
